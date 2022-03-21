@@ -1,0 +1,21 @@
+{
+  "name": "ezx-nodejs-api",
+  "version": "0.0.1",
+  "description": "For Ezpizee Token (EZX) BSC smart contract",
+  "main": "index.js",
+  "scripts": {
+    "check": "npm run format && npm run lint",
+    "dev": "nodemon index.js",
+    "pm2": "pm2 startOrRestart .pm2/pm2-config.json",
+    "pm2:dev": "pm2 startOrRestart .pm2/pm2-config-dev.json",
+    "pm2:stage": "pm2 startOrRestart .pm2/pm2-config-stage.json",
+    "pm2:prod": "pm2 startOrRestart .pm2/pm2-config-prod.json",
+    "format": "prettier --write \"**/*.+(js|yml|yaml|json)\"",
+    "lint": "eslint .",
+    "start": "node index.js",
+    "test": "NODE_ENV=test jest'"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0"
+  }
+}
