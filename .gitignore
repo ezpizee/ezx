@@ -72,6 +72,7 @@ target
 id_rsa
 id_rsa.pub
 package-lock.json
-/test
-/contracts/EZXTokenT1.sol
 /bin
+/test
+/contracts/test
+/contracts/EZXTokenT1.sol

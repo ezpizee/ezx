@@ -20,17 +20,14 @@
 
 pragma solidity ^0.8.4;
 
-import {BEP20} from "./common/protocol/BEP20/BEP20.sol";
-import {SafeMath} from "./common/utils/SafeMath.sol";
+import "../common/protocol/BEP20/BEP20.sol";
 
-contract EZXToken is BEP20 {
+contract EZXBEP20Token is BEP20 {
 
-    using SafeMath for uint256;
-
-    string  constant _name = "Ezpizee Token T1";
-    string  constant _symbol = "EZXT1";
-    uint8   constant _decimals = 9;
-    uint256 _totalSupply = 10 ** (9 + _decimals); // 1 billion
+    string constant _name = "Ezpizee Token";
+    string constant _symbol = "EZX";
+    uint8 constant _decimals = 9;
+    uint256 constant _totalSupply = 1000000000 * 10 ** (9 + _decimals); // 1 billion
 
     constructor() BEP20(_name, _symbol) {
         _mint(msg.sender, _totalSupply);
