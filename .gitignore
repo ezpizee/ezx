@@ -5,6 +5,10 @@
 *.tgz
 node_modules
 
+# REMIX SOLIDITY #
+##################
+artifacts
+
 # Compiled source #
 ###################
 #*.com
@@ -68,3 +72,6 @@ target
 id_rsa
 id_rsa.pub
 package-lock.json
+/test
+/contracts/EZXTokenT1.sol
+/bin

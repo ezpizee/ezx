@@ -1,19 +1,47 @@
 {
-  "name": "ezx-nodejs-api",
+  "name": "ezx-bsc-token",
   "version": "0.0.1",
   "description": "For Ezpizee Token (EZX) BSC smart contract",
+  "author": "Ezpizee Team",
+  "license": "MIT",
   "main": "index.js",
+  "homepage": "https://www.ezpizee.com",
+  "bin": {
+    "solstl": "./bin/main.js"
+  },
   "scripts": {
-    "check": "npm run format && npm run lint",
-    "dev": "nodemon index.js",
-    "pm2": "pm2 startOrRestart .pm2/pm2-config.json",
-    "pm2:dev": "pm2 startOrRestart .pm2/pm2-config-dev.json",
-    "pm2:stage": "pm2 startOrRestart .pm2/pm2-config-stage.json",
-    "pm2:prod": "pm2 startOrRestart .pm2/pm2-config-prod.json",
-    "format": "prettier --write \"**/*.+(js|yml|yaml|json)\"",
-    "lint": "eslint .",
-    "start": "node index.js",
-    "test": "NODE_ENV=test jest'"
+    "test": "jest && node ./bin/main.js tests --silent",
+    "ts-lint": "tslint -p .",
+    "ts-test": "jest",
+    "contracts-lint": "solhint **/*.sol",
+    "contracts-compile": "node ./bin/main.js compile",
+    "contracts-test": "node ./bin/main.js tests",
+    "contracts-perf": "node ./bin/main.js perf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezpizee/ezx-bsc.git"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.5",
+    "@types/jest-matchers": "^20.0.0",
+    "@types/mkdirp": "^0.5.1",
+    "@types/node": "^8.0.47",
+    "jest": "^21.2.1",
+    "solhint": "^1.1.7",
+    "ts-jest": "^21.1.4",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.5.0"
