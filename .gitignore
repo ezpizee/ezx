@@ -77,3 +77,4 @@ package-lock.json
 /contracts/test
 /contracts/EZXTokenT1.sol
 /common/dex
+/common/utils/BNBDistributor.sol
