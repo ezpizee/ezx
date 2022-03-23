@@ -15,7 +15,7 @@
  * | |___   / /__   __/ /  \ \___
  * |______|/_____\ |___/    \____\
  *
- * Ezpizee Co., Ltd. (last updated v0.0.1) (/contracts/common/protocol/BEP20/IBEP20.sol)
+ * Ezpizee Co., Ltd. (last updated v0.0.1) (/common/protocol/BEP20/IBEP20.sol)
  */
 
 pragma solidity ^0.8.4;

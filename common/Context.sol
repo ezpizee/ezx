@@ -15,7 +15,7 @@
  * | |___   / /__   __/ /  \ \___
  * |______|/_____\ |___/    \____\
  *
- * Ezpizee Co., Ltd. (last updated v0.0.1) (/contracts/common/Context.sol)
+ * Ezpizee Co., Ltd. (last updated v0.0.1) (/common/Context.sol)
  *
  * The Smart Contract Context
  */

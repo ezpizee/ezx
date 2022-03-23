@@ -15,7 +15,7 @@
  * | |___   / /__   __/ /  \ \___
  * |______|/_____\ |___/    \____\
  *
- * Ezpizee Co., Ltd. (last updated v0.0.1) (/contracts/common/utils/SafeMath.sol)
+ * Ezpizee Co., Ltd. (last updated v0.0.1) (/common/utils/SafeMath.sol)
  *
  * Standard SafeMath, stripped down to just add/sub/mul/div
  */
