@@ -20,7 +20,7 @@
 
 pragma solidity ^0.8.4;
 
-import "@/common/protocol/BEP20/BEP20.sol";
+import "../common/protocol/BEP20/BEP20.sol";
 
 contract EZXBEP20Token is BEP20 {
 
