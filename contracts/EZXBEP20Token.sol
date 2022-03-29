@@ -32,4 +32,8 @@ contract EZXBEP20Token is BEP20 {
     constructor() BEP20(_name, _symbol) {
         _mint(msg.sender, _totalSupply);
     }
+
+    function decimals() public view virtual override returns (uint8) {
+        return _decimals;
+    }
 }
